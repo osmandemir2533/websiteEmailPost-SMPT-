@@ -11,7 +11,10 @@ const port = process.env.PORT || 5000;
 //--------------
 //CANLI İÇİN uygun. CORS ayarları buna göre yapıldı. Geliştirme Local için ek ayarlar yazılmalı CORS izni için filan
 const corsOptions = {
-  origin: 'https://osmandemir2533.github.io',
+  origin: [
+    'https://osmandemir2533.github.io',
+    'https://osmandemir.netlify.app'
+  ],
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: false
