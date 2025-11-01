@@ -238,6 +238,21 @@ Email gönderiliyor - Gönderen: Ahmet (ahmet@example.com)
 ❌ Email gönderme hatası - Gönderen: Ahmet (ahmet@example.com) - Hata: Invalid credentials
 ```
 
+---
+
+## 🔄 Alternatif Sürüm (Resend API Version)
+
+> Eğer SMTP yapılandırmasıyla uğraşmak istemiyorsanız veya Gmail App Password kullanmak istemiyorsanız,  
+aynı projenin **Resend API tabanlı** sürümünü [buradan](https://github.com/osmandemir2533/websiteEmailPost) tercih edebilirsiniz:
+
+> Bu alternatif sürümde e-posta gönderimi **HTTP isteği** üzerinden yapılır.  
+Yani istemci (frontend) tarafı, backend’e bir **POST isteği** gönderir ve backend bu isteği  
+**Resend API**’ye iletir. Böylece SMTP bağlantısı veya port yapılandırması gerekmeden  
+mesajlar doğrudan API üzerinden güvenli bir şekilde iletilir.
+
+> 🔐 Bu sürümde sadece ```RESEND_API_KEY```(Resend API Anahtarı) ve ```RESEND_TO_EMAIL```(Gelen Mesajların İletileceği e-posta Adresi) tanımlamanız yeterlidir.  
+
+
 ## 👨‍💻 Geliştirici
 
 - [Osman Demir](https://github.com/osmandemir2533)
